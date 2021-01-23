@@ -3,8 +3,9 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import {Wrapper, Image, Artist, BottomEdgeDown, BottomEdgeUp} from './pageStyles/pageStyles'
+import {Wrapper, Image, Film, BottomEdgeDown, BottomEdgeUp} from './pageStyles/pageStyles'
 import {COLORS} from '../constants'
+
 const IndexPage = () => {
   const {
     wpcontent: {
@@ -63,7 +64,7 @@ const IndexPage = () => {
   }
 }
 `)
-console.log(homePageFeaturedFilms)
+console.log(homePageBannerFoto)
   return (
   <Layout>
     <SEO title="Home" />
@@ -86,18 +87,19 @@ console.log(homePageFeaturedFilms)
         <h2>Featured Films</h2>
         <div className="film-items">
         {homePageFeaturedFilms.map(({filmsMeta, slug})=>(
-          <Artist to={`/${slug}`}>
+          <Film to={`/${slug}`}>
             <Image fluid={filmsMeta.image.imageFile.childImageSharp.fluid} alt={filmsMeta.image.altText}></Image>
             <div className="film-info">
             <p>{filmsMeta.name}</p>
             </div>
             
-          </Artist>
+          </Film>
         ))}
         </div>  
       </div>
     </Wrapper>
-  </Layout>)
+  </Layout>
+  )
 }
 
 export default IndexPage

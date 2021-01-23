@@ -160,7 +160,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const Artist = styled(Link)`
+export const Film = styled(Link)`
   display: flex;
   position: relative;
   width: 22vw;
@@ -178,7 +178,7 @@ export const Artist = styled(Link)`
   &:hover {
     transform: scale(1.05);
 
-    .artist-info {
+    .film-info {
       height: 100%;
       background-color: ${COLORS.TERTIARY + "c0"};
 
