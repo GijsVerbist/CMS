@@ -5,6 +5,34 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+
+      resolve: "gatsby-source-graphql",
+      
+      options: {
+      
+      typeName: "WPGraphql",
+      
+      fieldName: "wpcontent",
+      
+      url: "http://verbist-showroom.local/graphql",
+      
+      },
+      
+      },
+      {
+
+        resolve: `gatsby-plugin-google-fonts`,
+        
+        options: {
+        
+        fonts: [`Roboto`, `Oswald`],
+        
+        display: "swap",
+        
+        },
+        
+        }, 
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
