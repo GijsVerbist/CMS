@@ -100,7 +100,7 @@ export const Wrapper = styled.div`
       }
 
       .description {
-        font-size: 1.2rem;
+        font-size: 2rem;
         color: ${COLORS.TERTIARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
@@ -109,7 +109,7 @@ export const Wrapper = styled.div`
       }
 
       .info {
-        font-family: 2rem;
+        font-family: 3rem;
         text-transform: uppercase;
       }
     }

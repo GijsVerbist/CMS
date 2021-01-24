@@ -28,7 +28,7 @@ exports.createPages = ({graphql, actions}) =>{
             const {id, slug} = film.node;
             createPage({
                 path: slug,
-                component: path.resolve(`src/templates/templateStyles/film.js`),
+                component: path.resolve(`src/templates/film.js`),
                 context: {
                     id,
                     slug
