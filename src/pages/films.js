@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import {Wrapper, Image, Artist, BottomEdgeDown, BottomEdgeUp, Film } from './pageStyles/pageStyles'
+import {Wrapper, Image, Artist, BottomEdgeDown, BottomEdgeUp, Film } from '../components/pageStyles/pageStyles'
 import {COLORS} from '../constants'
 
 
@@ -32,7 +32,7 @@ const FilmsPage = () => {
                 sourceUrl
                 imageFile{
                   childImageSharp{
-                    fluid(quality:100){
+                    fluid(quality:75){
                       ...GatsbyImageSharpFluid_withWebp
                     }
                   }
@@ -52,7 +52,7 @@ const FilmsPage = () => {
                     sourceUrl
                     imageFile{
                       childImageSharp{
-                        fluid(quality:100, grayscale: true){
+                        fluid(quality:75, grayscale: true){
                           ...GatsbyImageSharpFluid_withWebp
                         }
                       }
