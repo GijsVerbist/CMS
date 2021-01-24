@@ -1,7 +1,7 @@
 import React from 'react'
 import {graphql} from 'gatsby'
-import Layout from '../components/Layout'
-import SEO from '../components/Seo'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 import {Wrapper, Image} from './templateStyles/filmStyles'
 
 const FilmTemplate = ({ data: {wpcontent: {film: {filmsMeta, roles:{edges: roles}}}}}) =>{
