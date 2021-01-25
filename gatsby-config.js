@@ -15,7 +15,7 @@ module.exports = {
       
       fieldName: "wpcontent",
       
-      url: "http://verbist-showroom.netlifly.com/graphql",
+      url: "http://verbist-showroom.local/graphql",
       
       },
       
